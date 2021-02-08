@@ -2,3 +2,11 @@
 #+PROPERTY: header-args :session *shell docker* :results silent raw
 
 ** Contents                                                           :TOC_3:
+  - [[#select-docker-image-version][Select docker image version]]
+
+** Select docker image version
+
+#+BEGIN_SRC python
+IMAGE="golang"
+TAG="1.15.8-buster"
+#+END_SRC
