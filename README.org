@@ -4,6 +4,7 @@
 ** Contents                                                           :TOC_3:
   - [[#select-docker-image-version][Select docker image version]]
   - [[#pull-docker-image][Pull docker image]]
+  - [[#build-code][Build code]]
   - [[#references][References]]
 
 ** Select docker image version
@@ -17,6 +18,12 @@ TAG="1.15.8-buster"
 
 #+BEGIN_SRC sh
 docker pull $IMAGE:$TAG
+#+END_SRC
+
+** Build code
+
+#+BEGIN_SRC sh
+docker run --rm -v "`pwd`:/code" -v "`pwd`/vendor:/go/src" -w /code $IMAGE:$TAG go build -v
 #+END_SRC
 
 ** References
