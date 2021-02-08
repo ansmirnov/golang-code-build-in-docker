@@ -1,1 +1,2 @@
 #+TITLE: Build golang code in docker container
+#+PROPERTY: header-args :session *shell docker* :results silent raw
