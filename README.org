@@ -6,7 +6,7 @@
 
 ** Select docker image version
 
-#+BEGIN_SRC python
+#+BEGIN_SRC sh
 IMAGE="golang"
 TAG="1.15.8-buster"
 #+END_SRC
